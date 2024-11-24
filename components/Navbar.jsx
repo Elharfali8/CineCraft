@@ -14,14 +14,10 @@ import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
 
-function Navbar() {
+function Navbar({navIsOpen, handleNav, setNavIsOpen}) {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
-  const [navIsOpen, setNavIsOpen] = useState(false)
-
-    const handleNav = () => {
-        setNavIsOpen((prev) => !prev)
-    }
+  
     
     const toggleTheme = () => {
         setIsDarkMode((prev) => !prev)
@@ -36,6 +32,7 @@ function Navbar() {
 
   const handleSearchOpen = () => {
     setIsSearchOpen((prev) => !prev)
+    setNavIsOpen(false)
   }
 
   return (

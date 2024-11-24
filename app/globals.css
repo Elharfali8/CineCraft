@@ -39,6 +39,10 @@
 
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 2px var(--color-text);
+}
+
 .sign-in:hover {
   background-color: var(--color-accent-hover);
 }

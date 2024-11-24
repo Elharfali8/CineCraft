@@ -1,22 +1,32 @@
+import { FaHome } from "react-icons/fa";
+import { MdLocalMovies } from "react-icons/md";
+import { IoIosTv } from "react-icons/io";
+import { CgMoreO } from "react-icons/cg";
+
+
 export const navLinks = [
     {
         id: 1,
         title: 'Home',
-        path: '/'
+        path: '/',
+        icon: <FaHome />
     },
     {
         id: 2,
         title: 'Movies',
-        path: '/movie'
+        path: '/movie',
+        icon: <MdLocalMovies />
     },
     {
         id: 3,
         title: 'TV Shows',
-        path: '/tv'
+        path: '/tv',
+        icon: <IoIosTv />
     },
     {
         id: 4,
         title: 'More',
+        icon: <CgMoreO />,
         children: [
             {
                 id: 1,
