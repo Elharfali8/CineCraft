@@ -17,7 +17,7 @@
 }
 
 .search-btn {
-  color: var(--color-bg);
+  color: #FFFFFF;
   background-color: var(--color-accent);
   transition: all ease-in-out 150ms;
 }
@@ -71,6 +71,7 @@
 
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
+  color: #FFFFFF;
 }
 
 a {
@@ -231,3 +232,22 @@ body {
   }
 }
 
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.hero-slider {
+  display: flex;
+  height: 100%;
+}
+
+.hero-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}

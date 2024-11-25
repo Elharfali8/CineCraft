@@ -36,7 +36,7 @@ function Navbar({navIsOpen, handleNav, setNavIsOpen}) {
   }
 
   return (
-      <nav className='h-20 w-full navbar fixed top-0 right-0 left-0 shadow-md grid place-items-center '>
+      <nav className='h-20 w-full navbar fixed top-0 right-0 left-0 shadow-md grid place-items-center z-[99] '>
           <div className="container main-container flex items-center justify-between relative">
               <Link href='/' className=" order-2 lg:order-1">
                 <MainLogo />
@@ -61,7 +61,7 @@ function Navbar({navIsOpen, handleNav, setNavIsOpen}) {
                                               <DropdownMenuContent
             align="start"
             sideOffset={5}
-            className="hover-dropdown w-[150px]"
+            className="hover-dropdown w-[150px] z-[99]"
                                               >
                                                   {children.map((i) => {
                                               const { id, title, path, } = i
