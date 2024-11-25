@@ -7,11 +7,12 @@ import Link from 'next/link';
 
 const Hero = () => {
   const [movies, setMovies] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [type, setType] = useState('movie')
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const data = await fetchNowPlayingMovies();
+      const data = await fetchNowPlayingMovies({type});
       setMovies(data);
     };
 

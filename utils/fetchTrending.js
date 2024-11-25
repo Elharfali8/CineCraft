@@ -1,5 +1,5 @@
 
-export const fetchNowPlayingMovies = async ({type}) => {
+export const fetchTrending = async ({type}) => {
     const options = {
       method: 'GET',
       headers: {
@@ -9,11 +9,11 @@ export const fetchNowPlayingMovies = async ({type}) => {
     };
   
     try {
-      const res = await fetch(`https://api.themoviedb.org/3/${type}/now_playing?language=en-US&page=1`, options);
+      const res = await fetch(`https://api.themoviedb.org/3/trending/${type}/day?language=en-US`, options);
       const data = await res.json();
       return data.results || [];
     } catch (error) {
-      console.error('Error fetching now playing movies:', error);
+      console.error(`Error fetching trending ${type}:`, error);
       return [];
     }
   };
