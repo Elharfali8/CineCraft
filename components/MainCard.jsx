@@ -1,6 +1,5 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -9,8 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { image } from "@/utils/constants"
-import Image from "next/image"
 import Link from "next/link"
 
 export function MainCard({type, id, backdrop_path, title, overview, release_date, vote_average, name, first_air_date}) {
