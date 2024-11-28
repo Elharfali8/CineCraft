@@ -270,3 +270,7 @@ body {
 .main-gradient {
   background: var(--gradient-color);
 }
+
+.primary-text {
+  color: var(--color-accent);
+}

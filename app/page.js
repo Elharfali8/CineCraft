@@ -1,3 +1,4 @@
+import FavoriteList from "@/components/FavoriteList";
 import Hero from "@/components/Hero";
 import Trending from "@/components/Trending";
 import Upcoming from "@/components/Upcoming";
@@ -13,6 +14,9 @@ export default function Home() {
       </div>
       <div className="main-gradient py-8 lg:py-12">
           <Upcoming />
+      </div>
+      <div className="py-8 lg:py-12">
+        <FavoriteList />
       </div>
     </main>
   );
