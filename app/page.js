@@ -5,7 +5,7 @@ import Upcoming from "@/components/Upcoming";
 
 export default function Home() {
   return (
-    <main className="h-[400vh]">
+    <main className="">
       <div className="min-h-screen w-full pt-20  grid place-items-center">
           <Hero />
       </div>
