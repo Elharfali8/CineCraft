@@ -11,12 +11,12 @@ const Footer = () => {
     <div>
       <h3 className="text-xl font-semibold mb-4">Links</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-gray-400">Home</a></li>
-        <li><a href="#" className="hover:text-gray-400">Movies</a></li>
-        <li><a href="#" className="hover:text-gray-400">TV Shows</a></li>
-        <li><a href="#" className="hover:text-gray-400">Trending</a></li>
-        <li><a href="#" className="hover:text-gray-400">Popular</a></li>
-        <li><a href="#" className="hover:text-gray-400">Favorite</a></li>
+        <li><Link href="#" className="hover:text-gray-400">Home</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">Movies</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">TV Shows</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">Trending</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">Popular</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">Favorite</Link></li>
       </ul>
     </div>
 
@@ -24,19 +24,14 @@ const Footer = () => {
     <div>
       <h3 className="text-xl font-semibold mb-4">More</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-gray-400">About</a></li>
-        <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+        <li><Link href="#" className="hover:text-gray-400">About</Link></li>
+        <li><Link href="#" className="hover:text-gray-400">Contact</Link></li>
       </ul>
     </div>
 
     {/* Branding & Social Media */}
     <div className="text-center">
-      <h3 className="text-2xl font-bold mb-4">CineCraft</h3>
-      <div className="flex justify-center space-x-4">
-        <a href="#" aria-label="Facebook" className="text-white hover:text-gray-400"><i className="fab fa-facebook"></i></a>
-        <a href="#" aria-label="Twitter" className="text-white hover:text-gray-400"><i className="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram" className="text-white hover:text-gray-400"><i className="fab fa-instagram"></i></a>
-      </div>
+      <h3 className="text-2xl lg:text-3xl font-bold mb-4">CineCraft</h3>
     </div>
   </div>
 

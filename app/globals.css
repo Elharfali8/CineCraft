@@ -28,6 +28,11 @@
   --gradient-color: linear-gradient(135deg, #10132f, #1c1c1c)
 }
 
+.filters {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
 .search-btn {
   color: #FFFFFF;
   background-color: var(--color-accent);
@@ -278,3 +283,8 @@ body {
 .primary-text {
   color: var(--color-accent);
 }
+
+.hello {
+  color: #FFFFFF;
+}
+
