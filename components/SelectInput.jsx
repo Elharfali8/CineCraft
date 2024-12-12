@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SelectInput = ({name, value, handleValue, genres, label, isLoading}) => {
+const SelectInput = ({name, handleGenre, genres, label, isLoading, genre}) => {
   return (
       <div className='grid w-[90%] mx-auto'>
           <label htmlFor={name} className='text-white tracking-wide poppins-semibold text-lg lg:text-xl mb-2'>{label} :</label>
-          <select name={name} id={name} onChange={handleValue} className='bg-white text-black dark:bg-gray-200 rounded-md focus:outline-none shadow-lg py-2 pl-1 capitalize lg:text-lg poppins-medium'>
+          <select name={name} id={name} onChange={handleGenre} value={genre} className='bg-white text-black dark:bg-gray-200 rounded-md focus:outline-none shadow-lg py-2 pl-1 capitalize lg:text-lg poppins-medium'>
               {isLoading && <option value={'Loading...'}>
                 Loading...
               </option>}

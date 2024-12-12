@@ -1,3 +1,6 @@
+import axios from "axios";
+
+
 export const fetchData = async ({ type, page, genre, rating, startDate, endDate }) => {
     const options = {
         method: 'GET',

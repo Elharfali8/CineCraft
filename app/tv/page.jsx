@@ -8,8 +8,8 @@ import { fetchData } from '@/utils/fetchData'
 import { fetchGenres } from '@/utils/fetchGenres'
 import { useEffect, useState } from 'react'
 
-const MoviesPage = () => {
-  const [type, setType] = useState('movie')
+const TvPage = () => {
+  const [type, setType] = useState('tv')
   const [page, setPage] = useState(1)
   const [genres, setGenres] = useState([])
   const [isLoading, setIsLoading] = useState(true)
@@ -45,12 +45,10 @@ const MoviesPage = () => {
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState(getTodayDate())
 
-   
-  
-  const handleGenre = (e) => {
-    const value = e.target.value
-    setGenre(value.toLowerCase())
-  }
+    const handleGenre = (e) => {
+        const value = e.target.value
+        setGenre(value.toLowerCase())
+    }
 
     const handleRating = (e) => {
         setRating((prev) => ({ ...prev, max: e.target.value }));
@@ -59,8 +57,6 @@ const MoviesPage = () => {
     const handleStartDateChange = (e) => {
         setStartDate(e.target.value);
     };
-  
-    
 
     const handleEndDateChange = (e) => {
         setEndDate(e.target.value);
@@ -79,22 +75,20 @@ const MoviesPage = () => {
     }, 1500)
   }, [type, page, genre, rating, startDate, endDate])
 
-  console.log(genre);
-  
-
 
 
   return (
     <main className='mt-20 py-6 lg:py-8'>
       <div className="container main-container">
         <div className='mb-4 lg:mb-8'>
-          <MainBreadcrumb page='movies' />
+          <MainBreadcrumb page='tv shows' link={false} />
         </div>
         <div className='grid lg:grid-cols-7 xl:grid-cols-10 gap-6'>
           <div className='lg:col-span-2 xl:col-span-3 '>
             <Filters
               genres={genres}
               isLoading={isLoading}
+              genre={genre}
               handleGenre={handleGenre}
               handleEndDateChange={handleEndDateChange}
               handleRating={handleRating}
@@ -102,7 +96,6 @@ const MoviesPage = () => {
               rating={rating}
               startDate={startDate}
               endDate={endDate}
-              genre={genre}
             />
           </div>
           <div className=' lg:col-span-5 xl:col-span-7  w-full h-full py-1'>
@@ -119,4 +112,4 @@ const MoviesPage = () => {
   )
 }
 
-export default MoviesPage
+export default TvPage

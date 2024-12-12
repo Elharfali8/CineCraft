@@ -10,7 +10,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
-export function MainBreadcrumb({page, name}) {
+export function MainBreadcrumb({page, name, link, linkName}) {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -21,7 +21,7 @@ export function MainBreadcrumb({page, name}) {
           <Slash  />
         </BreadcrumbSeparator>
         <BreadcrumbItem>
-                  <BreadcrumbLink href="/components" className='secondary-text text-lg lg:text-xl poppins-medium tracking-wide capitalize dark:text-gray-300 dark:hover:text-white hover:underline'>{page}</BreadcrumbLink>
+                  <BreadcrumbLink href={`${link ? linkName : '#'}`} className='secondary-text text-lg lg:text-xl poppins-medium tracking-wide capitalize dark:text-gray-300 dark:hover:text-white hover:underline'>{page}</BreadcrumbLink>
         </BreadcrumbItem>
               {name && (
                   <>

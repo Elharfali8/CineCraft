@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card"
 import Link from "next/link"
 
-export function MainCard({type, id, backdrop_path, title, overview, release_date, vote_average, name, first_air_date}) {
+export function MainCard({type, id, backdrop_path, title, release_date, vote_average, name, first_air_date}) {
     const imageUrl = `https://image.tmdb.org/t/p/original${backdrop_path}`;
     
     return (

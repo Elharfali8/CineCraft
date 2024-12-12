@@ -28,6 +28,8 @@
   --gradient-color: linear-gradient(135deg, #10132f, #1c1c1c)
 }
 
+
+
 .filters {
   background: var(--color-accent);
   color: var(--color-bg);
